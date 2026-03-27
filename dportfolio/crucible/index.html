@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Ayden Edgar Lighting Design</title>
+		<script type="application/ld+json">
+		{
+		"@context" : "https://schema.org",
+		"@type" : "WebSite",
+		"name" : "Ayden Edgar Lighting Design",
+		"alternateName" : ["AE Lighting Design","AE Lighting", "Ayden Edgar Lighting"],
+		"url" : "https://www.aydenedgar.github.io"
+		}
+		</script>
+	<link rel="icon" href="/images/msc/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<header>
+			<nav class="navbar">
+				<div class="logo-container">
+				  <a href="/"><img src="/images/msc/AydenLogo.png" alt="Logo" class="logo"></a>
+				</div>
+				<ul class="nav-links">
+				  <li><a href="/">Home</a></li>
+				  <li><a href="/resume/">Resume</a></li>
+				  <li class="dropdown">
+					<a href="/portfolio/" id="dportfolio" aria-haspopup="true" aria-expanded="false">Design Portfolio ▾</a>
+                    <ul class="dropdown-menu" aria-labelledby="dportfolio">
+                        <li><a href="/portfolio/rent/">Rent</a></li>
+						<li><a href="/portfolio/somethingrotten/">Something Rotten!</a></li>
+                        <li><a href="/portfolio/crucible/">The Crucible</a></li>
+                    </ul>
+                </li>
+				  <!-- <li><a href="about.html">About Me</a></li> -->
+				</ul>
+			</nav>
+			<div class="hero" style="background-image: url('/images/everybody/godFinalSpeach.webp');">
+				<div class="hero-content">
+					<h1 class="page-title">The Crucible</h1>
+					<h3 class="subheading">Lighting Designer</h3><br>
+					<p class="subheading">Production Electrician</p><br>
+					<p class="subheading">Directed By Jay Kinsel</p><br>
+
+					<p class="subheading">Scenic Design: Jay Kinsel</p><br>
+                    <p class="subheading">Costume Design: Anna Boromisza-Habashi</p><br>
+					<!-- <p class="subheading">Costume Design: Rebecca Evans</p><br> -->
+				</div>
+			</div>
+		</header>
+        <section class="vid-section">
+            <h2 class="vid-title">Video</h2>
+            <div class="vid">
+  				<video id="video" controls></video>
+            </div>
+        </section>
+        <footer class="footer">
+			<div class="footer-content">
+			  <div class="contact-info">
+				<p>Phone: <a href="tel:+13039038606">(303) 903-8606</a></p>
+				<p>Email: <a href="mailto:ayden@aydenedgar.com">ayden@aydenedgar.com</a></p>
+			  </div>
+			  <p class="copyright">&copy; 2026 Ayden Edgar. All rights reserved.</p>
+			  <p class="copyright">Hosted on <a href="https://github.com/aydenedgar/portfolio">Github</a></p>
+			</div>
+		  </footer>
+    </div>
+	<script src="/js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  	<script>
+  	  const video = document.getElementById('video');
+  	  const source = "/vids/Rockband/Rockband.m3u8";   // ← your HLS playlist file
+
+  	  // If browser supports HLS natively (Safari, iOS)
+  	  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  	    video.src = source;
+
+  	  // Otherwise use hls.js (Chrome, Firefox, Edge)
+  	  } else if (Hls.isSupported()) {
+  	    const hls = new Hls();
+  	    hls.loadSource(source);
+  	    hls.attachMedia(video);
+  	  } else {
+  	    console.error("HLS not supported on this browser.");
+  	  }
+  	</script>
+</body>
+</html>
+

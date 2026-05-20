@@ -23,8 +23,8 @@ email: ayden@aydenedgar.com
 description: >- # this means to ignore newlines until "baseurl:"
   Ayden Edgar is a Lighting Designer and Electrician based out of Fort Collins, Colorado but is open to work accross the US and abroad.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://aydenedgar.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+url: "https://aydenedgar.com" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb.github.io/
 github_username:  aydenedgar
 
 # Build settings

@@ -14,8 +14,8 @@
     	"url" : "https://www.aydenedgar.github.io"
   	}
   	</script>
-	<link rel="icon" href="images/msc/AydenThumbnail.png">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="/images/msc/AydenThumbnail.png">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
@@ -28,38 +28,13 @@
 	<div id="wrapper">
 
 		<header>
-			<nav class="navbar">
-				<div class="logo-container">
-				  <a href="/"><img src="images/msc/AydenLogo.png" alt="Logo" class="logo" style="padding-top: .8vh;"></a>
-				</div>
-				<ul class="nav-links">
-				  <li><a href="/">Home</a></li>
-				  <li><a href="resume/">Resume</a></li>
-				  <li class="dropdown">
-					<a href="dportfolio/" id="dportfolio" aria-haspopup="true" aria-expanded="false">Design Portfolio ▾</a>
-                    <ul class="dropdown-menu" aria-labelledby="dportfolio">
-                        <li><a href="dportfolio/rent/">Rent</a></li>
-						<li><a href="dportfolio/somethingrotten/">Something Rotten!</a></li>
-                        <li><a href="dportfolio/crucible/">The Crucible</a></li>
-                    </ul>
-					</li>
-				<li class="dropdown">	
-					<a href="eportfolio/" id="eportfolio" aria-haspopup="true" aria-expanded="false">Electrician Portfolio ▾</a>
-					<ul class="dropdown-menu" aria-labelledby="eportfolio">
-						<li><a href="eportfolio/peter">Peter and the Starcatcher</a></li>
-						<li><a href="eportfolio/cherry">The Cherryfield Toy Company</a></li>
-					</ul>
-                </li>
-				  <!-- <li><a href="about.html">About Me</a></li> -->
-				</ul>
-			</nav>
+			<div id="header-placeholder"></div>
 			<div class="overlay" id="overlay"></div>
 			<div class="hero" style="background-image: url('images/rent/repriseCrop.jpg');">
 				<div class="hero-content" style="padding-bottom: 50vh;">
 					<h1 class="page-title">Ayden Edgar</h1>
 					<h3 class="subheading">Lighting Designer/Electrician</h3><br>
-					<p class="subheading"><a href="dportfolio/">Portfolio</a></p><br>
-                    <!-- <p class="subheading">potential proudest work link</p> -->
+					<p class="subheading"><a href="/dportfolio/">Portfolio</a></p><br>
 				</div>
 			</div>
 		</header>
@@ -69,19 +44,14 @@
         <section class="tile-section">
             <!-- <h1>Portfolio Highlights</h1> -->
 			<div class="tile">
-                <img src="images/rent/laVie.webp" alt="Rent">
+                <img src="/images/rent/laVie.webp" alt="Rent">
                 <h3>Rent</h3>
-                <a href="dportfolio/rent/">More Info →</a>
-            </div>
-			<div class="tile">
-                <img src="images/mob/MOB1.webp" alt="Something Rotten!">
-                <h3>Something Rotten!</h3>
-                <a href="dportfolio/somethingrotten/">More Info →</a>
+                <a href="/dportfolio/rent/">More Info →</a>
             </div>
             <div class="tile">
-                <img src="images/pirates/awayAway.webp" alt="The Crucible">
-                <h3>The Crucible</h3>
-                <a href="dportfolio/crucible/">More Info →</a>
+                <img src="/images/msc/RockbandThumb.jpg" alt="Rockband Project">
+                <h3>Rockband Project</h3>
+                <a href="/dportfolio/rockband/">More Info →</a>
             </div>
         </section>
 		<div style="background-color: #d9d9d9" class="tile-header">
@@ -89,14 +59,9 @@
 		</div>
         <section class="tile-section">
 			<div class="tile">
-                <img src="images/rent/laVie.webp" alt="The Cherryfield Toy Company">
+                <img src="/images/cherry/CherryHeader.jpg" alt="The Cherryfield Toy Company">
                 <h3>The Cherryfield Toy Company</h3>
-                <a href="eportfolio/cherry/">More Info →</a>
-            </div>
-			<div class="tile">
-                <img src="images/mob/MOB1.webp" alt="Peter and the Starcatcher">
-                <h3>Peter and the Starcatcher</h3>
-                <a href="eportfolio/peter/">More Info →</a>
+                <a href="/eportfolio/cherry/">More Info →</a>
             </div>
         </section>
         <section class="gallery-section">
@@ -104,9 +69,15 @@
 			  <h2>Photos</h2>
 			</div>
 			<div class="gallery-grid">
-				<img src="images/rent/contact.webp" alt="Rent (Associate)" class="lightbox-thumb">
-				<img src="images/rent/SeasonsOfLove.webp" alt="Rent (Associate)" class="lightbox-thumb">
-				<img src="images/rent/today4you.webp" alt="Rent (Associate)" class="lightbox-thumb">
+				<img src="/images/rent/contact.webp" alt="Rent (Associate)" class="lightbox-thumb">
+				<img src="/images/rent/Rent6.jpg" alt="Rent (Associate)" class="lightbox-thumb">
+				<img src="/images/rent/SeasonsOfLove.webp" alt="Rent (Associate)" class="lightbox-thumb">
+				<img src="/images/rent/today4you.webp" alt="Rent (Associate)" class="lightbox-thumb">
+				<img src="/images/rent/Rent4.jpg" alt="Rent (Associate)" class="lightbox-thumb">
+				<img src="/images/rent/Rent5.jpg" alt="Rent (Associate)" class="lightbox-thumb">
+				<img src="/images/cherry/Cherry2.jpg" alt="The Cherryfield Toy Company (Electrician)" class="lightbox-thumb">
+				<img src="/images/cherry/Cherry4.jpg" alt="The Cherryfield Toy Company (Electrician)" class="lightbox-thumb">
+				<img src="/images/cherry/Cherry1.jpg" alt="The Cherryfield Toy Company (Electrician)" class="lightbox-thumb">
 			</div>
 		  </section>
           <footer class="footer">
@@ -126,6 +97,7 @@
             <div id="caption" class="caption"></div>
           </div>
     </div>
+	<script src="/js/fetch.js"></script>
 	<script src="/js/lightbox.js"></script>
 	<script src="/js/script.js"></script>
 

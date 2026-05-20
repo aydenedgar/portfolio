@@ -28,41 +28,13 @@
 	<div id="wrapper">
 
 		<header>
-			<nav class="navbar">
-				<div class="logo-container">
-				  <a href="/"><img src="/images/msc/AydenLogo.png" alt="Logo" class="logo" style="padding-top: .8vh;"></a>
-				</div>
-				<ul class="nav-links">
-				  <li><a href="/">Home</a></li>
-				  <li><a href="/resume/">Resume</a></li>
-				  <li class="dropdown">
-					<a href="/dportfolio/" id="dportfolio" aria-haspopup="true" aria-expanded="false">Design Portfolio ▾</a>
-                    <ul class="dropdown-menu" aria-labelledby="dportfolio">
-                        <li><a href="/dportfolio/rent/">Rent</a></li>
-						<li><a href="/dportfolio/somethingrotten/">Something Rotten!</a></li>
-                        <li><a href="/dportfolio/crucible/">The Crucible</a></li>
-                    </ul>
-					</li>
-				<li class="dropdown">	
-					<a href="/eportfolio/" id="eportfolio" aria-haspopup="true" aria-expanded="false">Electrician Portfolio ▾</a>
-					<ul class="dropdown-menu" aria-labelledby="eportfolio">
-						<li><a href="/eportfolio/peter">Peter and the Starcatcher</a></li>
-						<li><a href="/eportfolio/cherry">The Cherryfield Toy Company</a></li>
-					</ul>
-                </li>
-				  <!-- <li><a href="about.html">About Me</a></li> -->
-				</ul>
-			</nav>
-			<div class="hero" style="background-image: url('/images/everybody/godFinalSpeach.webp');">
+			<div id="header-placeholder"></div>
+			<div class="hero" style="background-image: url('/images/rent/Rent2.jpg');">
 				<div class="hero-content">
-					<h1 class="page-title">The Crucible</h1>
-					<h3 class="subheading">Lighting Designer</h3><br>
-					<p class="subheading">Production Electrician</p><br>
-					<p class="subheading">Directed By Jay Kinsel</p><br>
-
-					<p class="subheading">Scenic Design: Jay Kinsel</p><br>
-                    <p class="subheading">Costume Design: Anna Boromisza-Habashi</p><br>
-					<!-- <p class="subheading">Costume Design: Rebecca Evans</p><br> -->
+					<h1 class="page-title">Rockband Project</h1>
+					<h3 class="subheading">Lighting Designer and Programming</h3><br>
+					<p class="subheading">Rig Designed by Henry Ledbetter</p>
+					<p class="subheading">and Dale Kaiser</p><br>
 				</div>
 			</div>
 		</header>
@@ -72,6 +44,12 @@
   				<video id="video" controls></video>
             </div>
         </section>
+		<section class="pdf-section">
+			<h2>Cue List</h2><br>
+			<object data="/pdfs/Automatic_CueList.pdf" type="application/pdf">
+			  <p>Your browser doesn't support PDF viewing. <a href="/pdfs/Automatic_CueList.pdf" target="_blank">Download it here</a>.</p>
+			</object>
+		</section>
         <footer class="footer">
 			<div class="footer-content">
 			  <div class="contact-info">
@@ -83,12 +61,13 @@
 			</div>
 		  </footer>
     </div>
+	<script src="/js/fetch.js/"></script>
 	<script src="/js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
   	<script>
   	  const video = document.getElementById('video');
-  	  const source = "/vids/Rockband/Rockband.m3u8";   // ← your HLS playlist file
+  	  const source = "/vids/Rockband/RockbandProject.m3u8";   // ← your HLS playlist file
 
   	  // If browser supports HLS natively (Safari, iOS)
   	  if (video.canPlayType('application/vnd.apple.mpegurl')) {

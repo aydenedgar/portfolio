@@ -28,37 +28,13 @@
 	<div id="wrapper">
 
 		<header>
-			<nav class="navbar">
-				<div class="logo-container">
-				  <a href="/"><img src="/images/msc/AydenLogo.png" alt="Logo" class="logo" style="padding-top: .8vh;"></a>
-				</div>
-				<ul class="nav-links">
-				  <li><a href="/">Home</a></li>
-				  <li><a href="/resume/">Resume</a></li>
-				  <li class="dropdown">
-					<a href="/dportfolio/" id="dportfolio" aria-haspopup="true" aria-expanded="false">Design Portfolio ▾</a>
-                    <ul class="dropdown-menu" aria-labelledby="dportfolio">
-                        <li><a href="/dportfolio/rent/">Rent</a></li>
-						<li><a href="/dportfolio/somethingrotten/">Something Rotten!</a></li>
-                        <li><a href="/dportfolio/crucible/">The Crucible</a></li>
-                    </ul>
-					</li>
-				<li class="dropdown">	
-					<a href="/eportfolio/" id="eportfolio" aria-haspopup="true" aria-expanded="false">Electrician Portfolio ▾</a>
-					<ul class="dropdown-menu" aria-labelledby="eportfolio">
-						<li><a href="/eportfolio/peter">Peter and the Starcatcher</a></li>
-						<li><a href="/eportfolio/cherry">The Cherryfield Toy Company</a></li>
-					</ul>
-                </li>
-				  <!-- <li><a href="about.html">About Me</a></li> -->
-				</ul>
-			</nav>
+			<div id="header-placeholder"></div> 
 			<div class="overlay" id="overlay"></div>
-			<div class="hero" style="background-image: url('/images/rent/laVie.webp');">
+			<div class="hero" style="background-image: url('/images/cherry/CherryHeaderCrop.jpg');">
 				<div class="hero-content">
 					<h1 class="page-title">The Cherryfield Toy Company</h1>
 					<h3 class="subheading">Production Electrician</h3><br>
-					<p class="subheading">Lighting design by Abby Sumner,</p><br>
+					<p class="subheading">Lighting design by Abby Sumner,</p>
           			<p class="subheading">Ava Barbieri, Koryn McManus</p><br>
 					<p class="subheading">Projections Design: Jacob Joachim</p><br>
 					<p class="subheading">Stage Manager: Caelum Janski</p><br>
@@ -67,11 +43,33 @@
 				</div>
 			</div>
 		</header>
-        <div style="background-color: #fff" class="tile-header">
+        <section class="tile-header">
+            <h3 style="text-align: center;">The Cherryfield Toy Company was a Student Written, design oriented, immersive production. Rather than a typical sit-and-watch model, audience members walked with the performers and watched the story evolve around them.</h3><br>
+			<h3 style="text-align: center;">This added a unique challenge to the construction of the set and lighting components. Most of the show was lit by practicals, and a high level of attention was required to ensure an aestetic, realistic finish on each room.</h3>
+		</section>
+		<section class="gallery-section">
+			<div class="gallery-header">
+			  <h2>Photos</h2>
+			</div>
+			<div class="gallery-grid">
+				<img src="/images/cherry/Cherry1.jpg" alt="The Dining Room" class="lightbox-thumb">
+				<img src="/images/cherry/Cherry2.jpg" alt="The Attic" class="lightbox-thumb">
+				<img src="/images/cherry/Cherry3.jpg" alt="The Attic" class="lightbox-thumb">
+				<img src="/images/cherry/Cherry4.jpg" alt="The Living Room" class="lightbox-thumb">
+			</div>
+		  </section>
+		<section class="tile-header">
+            <h3 style="text-align: center;">As the Production Electrician for The Cherryfield Toy Company, I was in charge of allocating power and data to all lighting fixtures, as well as power for audio and projections.</h3>
+			<h3 style="text-align: center;">This position also involved re-drafting the lighting plot, load calculations, practical design and construction, and being on call during performances in the event of a malfuction.</h3>
+			<h3 style="text-align: center;">I was also charged with designing a cue light system that performers could use to communicate show progress back to stage management.</h3><br>
+			<h3 style="text-align: center;">This production spanned two venues, and required over 130 practical units, including 8 window light boxes. There was also an enormous need for set-mounted fixtures, practical and otherwise, requiring extensive collaboration with the scenic shop.</h3><br>
+			<h3 style="text-align: center;">Please find select paperwork from this process below.</h3>
+		</section>
+        <section class="pdf-section">
             <h2 style="text-align: center;">Paperwork</h2>
-        </div>
-        <section class="tile-section">
-            <!-- <h1>Portfolio Highlights</h1> -->
+			<object data="/pdfs/cherry/PE_Packet_03-29-26_AE.pdf" type="application/pdf">
+			  <p>Your browser doesn't support PDF viewing. <a href="/pdfs/cherry/PE_Packet_03-29-26_AE.pdf" target="_blank">Download it here</a>.</p>
+			</object>
         </section>
           <footer class="footer">
 			<div class="footer-content">
@@ -90,6 +88,7 @@
             <div id="caption" class="caption"></div>
           </div>
     </div>
+	<script src="/js/fetch.js"></script>
 	<script src="/js/lightbox.js"></script>
 	<script src="/js/script.js"></script>
 

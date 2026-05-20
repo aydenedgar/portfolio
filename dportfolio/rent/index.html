@@ -26,34 +26,9 @@
     		</div>
 
 	<div id="wrapper">
-
 		<header>
-			<nav class="navbar">
-				<div class="logo-container">
-				  <a href="/"><img src="/images/msc/AydenLogo.png" alt="Logo" class="logo" style="padding-top: .8vh;"></a>
-				</div>
-				<ul class="nav-links">
-				  <li><a href="/">Home</a></li>
-				  <li><a href="/resume/">Resume</a></li>
-				  <li class="dropdown">
-					<a href="/dportfolio/" id="dportfolio" aria-haspopup="true" aria-expanded="false">Design Portfolio ▾</a>
-                    <ul class="dropdown-menu" aria-labelledby="dportfolio">
-                        <li><a href="/dportfolio/rent/">Rent</a></li>
-						<li><a href="/dportfolio/somethingrotten/">Something Rotten!</a></li>
-                        <li><a href="/dportfolio/crucible/">The Crucible</a></li>
-                    </ul>
-					</li>
-				<li class="dropdown">	
-					<a href="/eportfolio/" id="eportfolio" aria-haspopup="true" aria-expanded="false">Electrician Portfolio ▾</a>
-					<ul class="dropdown-menu" aria-labelledby="eportfolio">
-						<li><a href="/eportfolio/peter">Peter and the Starcatcher</a></li>
-						<li><a href="/eportfolio/cherry">The Cherryfield Toy Company</a></li>
-					</ul>
-                </li>
-				  <!-- <li><a href="about.html">About Me</a></li> -->
-				</ul>
-			</nav>
-			<div class="hero" style="background-image: url('/images/rent/laVie.webp');">
+			<div id="header-placeholder"></div>
+			<div class="hero" style="background-image: url('/images/rent/outTonightHeader.jpg');">
 				<div class="hero-content">
 					<h1 class="page-title">Rent</h1>
 					<h3 class="subheading">Associate Lighting Design</h3><br>
@@ -67,7 +42,6 @@
                     <p class="subheading">Sound Design: Chandler Webb</p><br>
                     <p class="subheading">Hair and Makeup Design: Annecy Wood</p><br>
                     <p class="subheading">Costume Design: Chloe Martin</p><br>
-					<!-- <p class="subheading">Costume Design: Rebecca Evans</p><br> -->
 				</div>
 			</div>
 		</header>
@@ -76,7 +50,7 @@
 			  <h2>Photos</h2>
 			</div>
 			<div class="gallery-grid">
-				<img src="/images/rent/rent.webp" alt="Rent" class="lightbox-thumb">
+				<img src="/images/rent/rent.webp" alt="Rent!" class="lightbox-thumb">
 				<img src="/images/rent/today4you.webp" alt="Today For You" class="lightbox-thumb">
 				<img src="/images/rent/IllCoverYou.webp" alt="I'll Cover You" class="lightbox-thumb">
 				<img src="/images/rent/outTonight.webp" alt="Out Tonight" class="lightbox-thumb">
@@ -86,7 +60,22 @@
 				<img src="/images/rent/contact.webp" alt="Contact" class="lightbox-thumb">
 				<img src="/images/rent/reprise.webp" alt="I'll Cover You (reprise)" class="lightbox-thumb">
 				<img src="/images/rent/MimiRevive.webp" alt="Your Eyes" class="lightbox-thumb">
+				<img src="/images/rent/Rent1.jpg" alt="Contact" class="lightbox-thumb">
+				<img src="/images/rent/Rent3.jpg" alt="Rent!" class="lightbox-thumb">
+				<img src="/images/rent/Rent6.jpg" alt="Tango Maureen" class="lightbox-thumb">
+				<img src="/images/rent/Rent4.jpg" alt="I Should Tell You" class="lightbox-thumb">
+				<img src="/images/rent/Rent5.jpg" alt="Viva La Vie Boheme" class="lightbox-thumb">
 			</div>
+		</section>
+		<section class="pdf-section">
+			<h2>Paperwork</h2><br>
+			<h3>Plotting</h3><br>
+			<object data="/pdfs/rent/RentFinal_vF_4-09-26_AE.pdf" type="application/pdf">
+			  <p>Your browser doesn't support PDF viewing. <a href="/pdfs/rent/RentFinal_vF_4-09-26_AE.pdf" target="_blank">Download it here</a>.</p>
+			</object><br><br>
+			<h3>Cue Notes Sample</h2><br>
+			<object data="/pdfs/rent/Edgar_RentCueNoteSample.pdf" type="application/pdf">
+			  <p>Your browser doesn't support PDF viewing. <a href="/pdfs/rent/Edgar_RentCueNoteSample.pdf" target="_blank">Download it here</a>.</p>
 		</section>
 		<section class="pdf-section">
 			<h2>Show File</h2>
@@ -106,12 +95,13 @@
 		  </footer>
 		<div id="lightbox" class="lightbox hidden">
             <button id="prev" class="nav-btn">←</button>
-            <img src="" alt="Full view" />
+            <img src="" alt="Full view">
             <button id="next" class="nav-btn">→</button>
             <div id="caption" class="caption"></div>
           </div>
-		</div>
-	<script src="/js/script.js"></script>
+	</div>
+	<script src="/js/fetch.js"></script>
 	<script src="/js/lightbox.js"></script>
+	<script src="/js/script.js"></script>
 </body>
 </html>

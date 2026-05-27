@@ -59,23 +59,23 @@
       <section class="vid-section">
         <div class="gallery-header">
           <h2 class="vid-title"><a href="/dportfolio/rockband/">Rockband Project</a></h2>
-          <p>Classwork: Lighting Design and Programming to Automatic by half - alive.</p>
+          <p>Classwork: Lighting Design and Programming</p>
+		  <p>Automatic by half•alive</p>
         </div>
         <div class="vid">
-              <video class="hls-player" controls data-source="/vids/Rockband/Rockband.m3u8"></video>
+  				<video id="video" controls></video>
         </div>
       </section>
         <footer class="footer">
           <div class="footer-content">
             <div class="contact-info">
-            <p>Phone: <a href="tel:+13148133822">(314) 813-3822</a></p>
-            <p>Email: <a href="mailto:henry@henryledbetter.com">henry@henryledbetter.com</a></p>
+            <p>Phone: <a href="tel:+13039038606">(303) 903-8606</a></p>
+            <p>Email: <a href="mailto:ayden@aydenedgar.com">ayden@aydenedgar.com</a></p>
             </div>
-            <p class="copyright">&copy; 2025 Henry Ledbetter. All rights reserved.</p>
-            <p class="copyright">Hosted on <a href="https://github.com/HL-Lighting/portfolio">Github</a></p>
-    
+            <p class="copyright">&copy; 2026 Ayden Edgar. All rights reserved.</p>
+            <p class="copyright">Hosted on <a href="https://github.com/aydenedgar/portfolio">Github</a></p>
           </div>
-          </footer>
+        </footer>
           <div id="lightbox" class="lightbox hidden">
             <button id="prev" class="nav-btn">←</button>
             <img src="" alt="Full view" />
@@ -89,25 +89,21 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
   <script>
-    // Grab all video elements that should use HLS
-    const players = document.querySelectorAll('.hls-player');
+      const video = document.getElementById('video');
+  	  const source = "/vids/Rockband/RockbandProject.m3u8";   // ← your HLS playlist file
 
-    players.forEach(video => {
-      const source = video.getAttribute('data-source');
+  	  // If browser supports HLS natively (Safari, iOS)
+  	  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  	    video.src = source;
 
-      // Safari / iOS: native HLS support
-      if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = source;
-
-      // Other browsers: use hls.js
-      } else if (Hls.isSupported()) {
-        const hls = new Hls();
-        hls.loadSource(source);
-        hls.attachMedia(video);
-      } else {
-        console.error('HLS not supported in this browser for', source);
-      }
-    });
+  	  // Otherwise use hls.js (Chrome, Firefox, Edge)
+  	  } else if (Hls.isSupported()) {
+  	    const hls = new Hls();
+  	    hls.loadSource(source);
+  	    hls.attachMedia(video);
+  	  } else {
+  	    console.error("HLS not supported on this browser.");
+  	  }
   </script>
 </body>
 </html>

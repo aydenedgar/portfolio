@@ -292,6 +292,20 @@ nav {
   width: 100%;
 }
 
+.pdf-split {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 80vh; /* Adjust height as needed */
+}
+
+.pdf-splitembed {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  border: none;
+}
+
 /* Media styling */
 .media-col img,
 .media-col video {
@@ -439,7 +453,7 @@ nav {
 }
 .vid video {
   object-fit: contain;
-  max-height: 80vh;
+  max-height: 70vh;
   max-width: 95vw;
   text-align: center;
   object-position: center;
